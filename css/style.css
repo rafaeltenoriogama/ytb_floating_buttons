@@ -1,0 +1,32 @@
+body {
+  background-color: darkkhaki;
+}
+
+.header-class {
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.main-aside {
+  border: 1px solid black;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.main-class {
+  border: 1px solid black;
+  margin: 20px;
+}
+
+.aside-class {
+  border: 1px solid black;
+  display: grid;
+  height: 180px;
+  width: 120px;
+  margin: 20px;
+}
+
+.aside-class button {
+  margin: 1px;
+  width: 90px;
+}
