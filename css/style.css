@@ -10,6 +10,10 @@ header {
   color: white;
 }
 
+/*
+Header with searching bar configuration in display flex and then
+main content in display grid
+ */
 .menu-logo {
   display: flex;
   align-items: center;
@@ -55,6 +59,11 @@ header {
   cursor: pointer;
 }
 
+/*
+Header with searching bar configuration in display flex and then
+main content in display grid
+ */
+
 .main-aside {
   border: 1px solid black;
   margin: 20px;
@@ -72,12 +81,78 @@ header {
 .aside-class {
   border: 1px solid black;
   display: grid;
-  height: 180px;
+  grid-gap: 1px;
+  height: auto;
   width: 120px;
   margin: 20px;
 }
 
-.aside-class button {
-  margin: 3px;
+/* button animation */
+.btn {
+  background: transparent;
+  border: none;
+  position: relative;
+  height: 30px;
   width: 90px;
+  margin: 10px;
+  cursor: pointer;
 }
+
+.btn-back {
+  border-radius: 10px;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s;
+}
+
+.btn-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  background: rgb(252, 78, 78);
+  color: #fff;
+  border: solid 2px black;
+  top: 0;
+  left: 0;
+  position: absolute;
+  border-radius: 10px;
+  font-size: 1rem;
+  /* font-weight: bold; */
+  transition: all 0.3s;
+}
+
+.btnEsq img {
+  opacity: 0;
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 100px;
+  height: 100px;
+  z-index: 3;
+  transition: all 0.3s;
+}
+
+.btnEsq:hover .btn-text {
+  transform: translate(-15px, -10px) rotate(-2deg);
+}
+
+.btnEsq:hover .btn-back {
+  transform: rotate(-2deg);
+}
+
+.btnDir:hover .btn-text {
+  transform: translate(15px, -10px) rotate(-2deg);
+}
+
+.btnDir:hover .btn-back {
+  transform: rotate(-2deg);
+}
+/* button animation */
