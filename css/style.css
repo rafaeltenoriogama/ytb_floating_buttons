@@ -2,20 +2,71 @@ body {
   background-color: darkkhaki;
 }
 
-.header-class {
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+.menu-logo {
+  display: flex;
+  align-items: center;
+}
+
+.menu-logo img {
+  height: 24px;
+  margin-right: 10px;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 50%;
+  padding: 5px;
+}
+
+.search-bar button {
+  background-color: white;
   border: 1px solid black;
-  margin: 20px;
+  cursor: pointer;
+  padding: 5px;
+  height: 29px;
+}
+
+.search-bar button img {
+  height: 100%;
+}
+
+.user-options {
+  display: flex;
+  align-items: center;
+}
+
+.user-options img {
+  height: 24px;
+  margin-left: 10px;
+  cursor: pointer;
 }
 
 .main-aside {
   border: 1px solid black;
+  margin: 20px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: auto 1fr;
+  grid-gap: 20px;
 }
 
 .main-class {
   border: 1px solid black;
   margin: 20px;
+  display: grid;
 }
 
 .aside-class {
@@ -27,6 +78,6 @@ body {
 }
 
 .aside-class button {
-  margin: 1px;
+  margin: 3px;
   width: 90px;
 }
